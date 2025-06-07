@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+:where(body) {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-400);
+}
