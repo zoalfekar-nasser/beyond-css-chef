@@ -1,12 +1,6 @@
 # Chef 🧑‍🍳 - A Professional Front-End Starter Template
 
-You are absolutely right. The original text sounded like it was marketing a product, which can feel inauthentic for a portfolio project. The goal is to sound confident and competent, not to oversell.
-
-Here are a few rewritten versions that are more grounded, professional, and aligned with your goal. They remove the exaggeration while still highlighting the project's quality.
-
-### Option 1 (Recommended - Clear and Professional)
-
-> **Chef** is the capstone project for Kevin Powell's *Beyond CSS* course, built to demonstrate a comprehensive, hands-on application of modern Sass. It implements a full 7-1 architecture and covers key concepts from the course, including custom functions, advanced mixins, and a fluid design system. This project serves as a practical showcase of writing scalable and maintainable CSS with a Vite-powered workflow.
+ **Chef** is the capstone project for Kevin Powell's *Beyond CSS* course, built to demonstrate a comprehensive, hands-on application of modern Sass. It implements a full 7-1 architecture and covers key concepts from the course, including custom functions, advanced mixins, and a fluid design system. This project serves as a practical showcase of writing scalable and maintainable CSS with a Vite-powered workflow.
 
 
 ## 🚀 Live Demo
