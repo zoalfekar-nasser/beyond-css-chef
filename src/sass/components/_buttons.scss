@@ -7,41 +7,48 @@
   font-size: 1rem;
   font-weight: $fw-700;
   cursor: pointer;
+  transition: background $t-duration, color $t-duration, transform $t-duration;
+
+  &:active {
+    transform: translateY(3px) scale(0.985);
+  }
+
   &[data-type="primary"] {
     --btn-bg: var(--clr-primary-500);
     --btn-fg: var(--clr-neutral-900);
-    transition: background $t-duration, color $t-duration;
-    &:is(:hover,:focus-visible) {
-      color: var(--clr-neutral-100);
-      background-color: hsl(from var(--btn-bg) h s calc(l - 25));
+
+    @include media-min(medium) {
+      &:is(:hover, :focus-visible) {
+        color: var(--clr-neutral-100);
+        background-color: hsl(from var(--btn-bg) h s calc(l - 25));
+      }
     }
   }
   &[data-type="secondary"] {
     --btn-bg: transparent;
     --btn-fg: currentColor;
     border: 3px solid currentColor;
-    position: relative;
-    transition: color $t-duration;
-    isolation: isolate;
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 0;
-      height: 100%;
-      background-color: var(--clr-neutral-100);
-      transition: width $t-duration;
-      z-index: -1;
-    }
-
-    &:is(:hover, :focus-visible) {
-      --btn-fg: black;
+    @include media-min(medium) {
+      position: relative;
+      isolation: isolate;
       &::before {
-        width: 100%;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: var(--clr-neutral-100);
+        transition: width $t-duration;
+        z-index: -1;
+      }
 
+      &:is(:hover, :focus-visible) {
+        --btn-fg: black;
+        &::before {
+          width: 100%;
+        }
       }
     }
   }
-
 }
