@@ -18,7 +18,7 @@
 
   @include media-min(medium) {
     min-height: 85vh; // Fallback
-    min-height: 85svh;
+    min-height: 85dvh;
   }
 }
 
