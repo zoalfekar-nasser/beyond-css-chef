@@ -2,6 +2,7 @@
 @use "sass:color";
 
 .hero {
+  min-height: 100vh; // Fallback
   min-height: 100svh;
   background-image: url("/assets/hero-bg.jpg");
   background-size: cover;
@@ -16,6 +17,7 @@
   }
 
   @include media-min(medium) {
+    min-height: 85vh; // Fallback
     min-height: 85svh;
   }
 }
