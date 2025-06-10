@@ -8,7 +8,7 @@ import { createHtmlPlugin } from "vite-plugin-html";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 export default defineConfig({
-  // Specifies the project root. Essential for Vite to understand your folder structure.
+  // Specifies the project root. Essential for Vite to understand the folder structure.
   root: resolve(__dirname, "src/"),
 
   // Specifies the server base. '/' means the server starts at the project root.
@@ -17,19 +17,19 @@ export default defineConfig({
 
   // Build-specific options.
   build: {
-    // The output directory for your final production files.
+    // The output directory for the final production files.
     outDir: "../dist",
     // Clears the output directory before each build. Good practice.
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        // Defines the entry point of your application.
+        // Defines the entry point of the application.
         home: resolve(__dirname, "src/index.html"),
       },
     },
   },
 
-  // Your plugins array.
+  // The plugins array.
 
   plugins: [
     htmlPurge({
