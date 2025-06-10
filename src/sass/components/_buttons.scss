@@ -7,6 +7,7 @@
   font-size: 1rem;
   font-weight: $fw-700;
   cursor: pointer;
+  user-select: none;
   transition: background $t-duration, color $t-duration, transform $t-duration;
 
   &:active {
