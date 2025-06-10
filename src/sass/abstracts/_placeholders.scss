@@ -1,0 +1,11 @@
+@use "spacing" as *;
+
+// @use ""
+%flex {
+  display: flex;
+  gap: var(--gap, $space-base);
+}
+
+%shadow {
+  box-shadow: 0 0 10px hsl(from var(--clr-neutral-900) h s l/ .3);
+}

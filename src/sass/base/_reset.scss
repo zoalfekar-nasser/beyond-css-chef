@@ -1,3 +1,4 @@
+/*! purgecss start ignore */
 :where(*, ::before, ::after) {
   box-sizing: border-box;
 }
@@ -28,3 +29,4 @@
   font-family: inherit;
   font-size: inherit;
 }
+/*! purgecss end ignore */

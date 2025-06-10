@@ -28,3 +28,23 @@
     @content;
   }
 }
+
+
+@mixin underline(
+  $w: 10rem,
+  $h: 1px,
+  $bg: currentColor,
+  $m: 2rem
+) {
+  position: relative;
+
+  &::after {
+    // position: absolute;
+    content: "";
+    display: block;
+    margin: $m auto;
+    width: $w;
+    height: $h;
+    background-color: $bg;
+  }
+}

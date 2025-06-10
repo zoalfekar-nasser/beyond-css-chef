@@ -1,0 +1,34 @@
+@use "../abstracts/" as *;
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: $space-s;
+  &__content {
+    @extend %flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 50px;
+  }
+
+  &__links {
+    @extend %flex;
+  }
+
+  &__link {
+    font-family: $ff-secondary;
+    color: var(--clr-neutral-100);
+    text-decoration: none;
+    transition: letter-spacing 0.3s;
+
+    &:is(:hover, :focus-visible) {
+      letter-spacing: 2px;
+      text-decoration: underline;
+    }
+  }
+}

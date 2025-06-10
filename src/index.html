@@ -1,13 +1,328 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./sass/style.scss">
-    <title>Vite App</title>
+    <meta
+      name="description"
+      content="Chef is a responsive, food-themed web application developed as the capstone project for the |Beyond CSS| course. It serves as a comprehensive, real-world example of modern Sass, implementing everything from variables and mixins to complex functions and a scalable BEM architecture."
+    />
+    <meta
+      name="keywords"
+      content="Sass
+    Front-End Development
+    CSS
+    Responsive Design
+    Portfolio Project
+    Web Development
+    CSS Preprocessor
+    BEM
+    UI Design
+    Chef App"
+    />
+    <!--? Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--? Fonts -->
+    <link rel="stylesheet" href="./sass/style.scss" />
+    <title>Beyond CSS | Chef Project</title>
   </head>
   <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__content">
+          <img
+            class="header__logo"
+            src="/assets/logo.svg"
+            alt="Homecooked meals logo"
+          />
 
+          <nav class="header__nav">
+            <ul class="header__links">
+              <li><a href="#features" class="header__link">Features</a></li>
+              <li><a href="#meals" class="header__link">Meals</a></li>
+              <li>
+                <a href="#testimonials" class="header__link">Testimonials </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero | text-center">
+        <div class="wrapper">
+          <div class="hero__content | flow" data-spacing="medium">
+            <h1 class="main-heading">
+              Homecooked meals delivered straight to your door
+            </h1>
+            <div class="hero__buttons | flex">
+              <button class="button" data-type="primary">Place Order</button>
+              <button class="button" data-type="secondary">More info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="food | section-padding">
+        <div class="wrapper">
+          <div class="food__content | grid">
+            <picture>
+              <source srcset="/assets/about.webp" type="image/webp" />
+              <source srcset="/assets/about.avif" type="image/avif" />
+              <img
+                class="food__img"
+                src="/assets/about.jpg"
+                alt=" A bright, airy top-down view of a healthy breakfast spread, featuring broiled grapefruit topped with fish, and bowls of yogurt with fresh figs and mint on rustic ceramic plates."
+              />
+            </picture>
+            <div class="food__text | flow">
+              <div class="heading">
+                <h2 class="heading__title">Amazing food without the hassle</h2>
+                <p class="heading__extension">
+                  We do all the work, so all you have to do is sit back and
+                  enjoy
+                </p>
+              </div>
+              <div class="food__info">
+                <h3 class="sub-heading">It’s ready to go</h3>
+
+                <p class="normal-text">
+                  Whether it’s for a romantic evening with your significant
+                  other or if you’re hosting a large party and need food for a
+                  big group, we’re here to help!<br />
+                  <br />
+                </p>
+                <p class="normal-text">
+                  We can cater to whatever your needs are, and ensure that our
+                  delicious food is delivered at the perfect moment, fresh, hot,
+                  and ready to eat exactly when you need it to be there.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features | section-padding text-center">
+        <div class="wrapper | flow" data-spacing="large">
+          <div class="heading">
+            <h2 class="heading__title">We make great food</h2>
+            <p class="heading__extension | text-balance mi-auto">
+              Cooking is our passion, with quality and freshness being of the
+              utmost importance
+            </p>
+          </div>
+          <div class="features__content | grid">
+            <div class="feature">
+              <h3 class="sub-heading">Fresh Ingredients</h3>
+              <p class="normal-text">
+                We take food seriously, and the first thing to making great food
+                is using fresh ingredients. If the ingredients don’t meet our
+                standard, we don’t use them.
+              </p>
+            </div>
+            <div class="feature">
+              <h3 class="sub-heading">Professional chef</h3>
+              <p class="normal-text">
+                Chef Wellington is a professionally trained chef who’s worked in
+                top kitchens around the world.
+              </p>
+            </div>
+            <div class="feature">
+              <h3 class="sub-heading">Ready for you</h3>
+              <p class="normal-text">
+                Stop using services where you have to re-heat your food. We get
+                it to your door ready to eat, without sacrificing any quality at
+                all.
+              </p>
+            </div>
+            <div class="feature">
+              <h3 class="sub-heading">Made with love</h3>
+              <p class="normal-text">
+                Food is our passion, and we infuse that love and passion into
+                every single plate that we make and deliver straight to your
+                home.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="meals" class="meals | section-padding">
+        <div class="wrapper" data-type="extended">
+          <div class="heading text-center">
+            <h2 class="heading__title">Some of our meals</h2>
+            <p class="heading__extension | text-balance mi-auto">
+              Here are a few of our delicious, home-cooked meals that are sure
+              to please your taste buds.
+            </p>
+          </div>
+          <div class="meals__content | grid">
+            <div class="meal">
+              <picture class="meal__photo">
+                <source srcset="/assets/meal-01.webp" type="image/webp" />
+                <source srcset="/assets/meal-01.avif" type="image/avif" />
+                <img
+                  src="/assets/meal-01.jpg"
+                  alt="A beautifully plated dish of pan-seared salmon on a bed of spinach, topped with a fresh cucumber and tomato salsa, with a glass of red wine in a romantic, fine-dining setting."
+                />
+              </picture>
+              <div class="meal__description">
+                <h3 class="sub-heading">Pan-seared salmon and veges</h3>
+                <p class="normal-text">
+                  A pan-seared salmon filet served on top of a giant bed of
+                  delicious vegetables.
+                </p>
+              </div>
+            </div>
+            <div class="meal">
+              <picture class="meal__photo">
+                <source srcset="/assets/meal-02.webp" type="image/webp" />
+                <source srcset="/assets/meal-02.avif" type="image/avif" />
+                <img
+                  src="/assets/meal-02.jpg"
+                  alt="Delicious-looking steak tacos on soft corn tortillas, filled with medium-rare beef and a fresh green salsa, served with lime wedges and a glass of beer."
+                />
+              </picture>
+              <div class="meal__description">
+                <h3 class="sub-heading">Steak Tacos</h3>
+                <p class="normal-text">
+                  Delicious rib-eye steak tacos served with chimichurri and
+                  fresh limes.
+                </p>
+              </div>
+            </div>
+            <div class="meal">
+              <picture class="meal__photo">
+                <source srcset="/assets/meal-03.webp" type="image/webp" />
+                <source srcset="/assets/meal-03.avif" type="image/avif" />
+                <img
+                  src="/assets/meal-03.jpg"
+                  alt="An action shot of a chef expertly tossing fresh mussels in a large silver wok, capturing them in mid-air in a professional kitchen."
+                />
+              </picture>
+              <div class="meal__description">
+                <h3 class="sub-heading">Seafood platter</h3>
+                <p class="normal-text">
+                  A seafood platter like you've never prepared before.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="testimonials"
+        class="testimonials | section-padding flow"
+        data-spacing="large"
+      >
+        <div class="heading">
+          <h2 class="heading__title | text-center text-balance">
+            What our clients are saying about us
+          </h2>
+        </div>
+        <div class="wrapper" data-type="extended">
+          <div class="testimonials__content | grid">
+            <div class="testimonial | text-center">
+              <picture class="testimonial__img">
+                <source
+                  srcset="/assets/testimonial-01.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/assets/testimonial-01.avif"
+                  type="image/avif"
+                />
+                <img
+                  src="/assets/testimonial-01.jpg"
+                  alt=" A handsome young man smiling warmly as he stands in a sunlit field at golden hour, wearing a black jacket with his arms crossed."
+                />
+              </picture>
+              <p class="testimonial__content | normal-text">
+                John Wellington and his team make the most amazing food. Every
+                single time I’ve ordered, I’ve been blown-away by the quality.
+                You can tell they only use fresh ingredients and put a lot of
+                love into every single meal they make! You really can’t ask for
+                anything more, it’s always fantastic.
+              </p>
+              <div class="testimonial__creator">
+                <p class="testimonial__name">John Deer</p>
+                <p class="testimonial__role">Lover of good food</p>
+              </div>
+            </div>
+            <div class="testimonial | text-center">
+              <picture class="testimonial__img">
+                <source
+                  srcset="/assets/testimonial-02.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/assets/testimonial-02.avif"
+                  type="image/avif"
+                />
+                <img
+                  src="/assets/testimonial-02.jpg"
+                  alt="A stylish woman with short hair smiles radiantly while holding her smartphone, dressed in a vibrant teal blouse and a statement gold necklace, bathed in bright sunlight."
+                />
+              </picture>
+              <p class="testimonial__content | normal-text">
+                I’m so happy that I found John Wellington! The food is on par
+                with some of the best restaurants I’ve ever eaten at, but from
+                the comfort of my own home. Every single time I order, it’s
+                mouthwateringly delicious.
+              </p>
+              <div class="testimonial__creator">
+                <p class="testimonial__name">Marie Condo</p>
+                <p class="testimonial__role">Foodie</p>
+              </div>
+            </div>
+            <div class="testimonial | text-center">
+              <picture class="testimonial__img">
+                <source
+                  srcset="/assets/testimonial-03.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/assets/testimonial-03.avif"
+                  type="image/avif"
+                />
+                <img
+                  src="/assets/testimonial-03.jpg"
+                  alt="A close-up of a woman with her eyes closed in enjoyment as she takes a bite of a delicious-looking sandwich, with her hair blowing softly across her face."
+                />
+              </picture>
+              <p class="testimonial__content | normal-text">
+                From simple meals to some of the most extravagant things I’ve
+                ever eaten, John and his team always deliver. Every time I order
+                something new, I just can’t wait for it to be delivered and I
+                know how mouth-wateringly declicious it’s going to be. If you
+                like good food, you have to give it a try!
+              </p>
+              <div class="testimonial__creator">
+                <p class="testimonial__name">Sam Reinhert</p>
+                <p class="testimonial__role">Good food enthusiast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer | section-padding text-center text-balance">
+      <div class="wrapper flow">
+        <p class="footer__text">
+          Homecooked meals delivered straight to your door
+        </p>
+        <p class="footer__text">©2022 Personal Chef Services</p>
+        <p class="footer__text">
+          555 Boulevard Anywhere, Montreal, Quebec, J1S 1S9 | 123-555-1234
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
   </body>
 </html>

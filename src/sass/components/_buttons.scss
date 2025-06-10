@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+.button {
+  text-transform: uppercase;
+  color: var(--btn-fg);
+  background-color: var(--btn-bg);
+  padding: $space-xs $space-base;
+  font-size: 1rem;
+  font-weight: $fw-700;
+  cursor: pointer;
+  &[data-type="primary"] {
+    --btn-bg: var(--clr-primary-500);
+    --btn-fg: var(--clr-neutral-900);
+  }
+  &[data-type="secondary"] {
+    --btn-bg: transparent;
+    --btn-fg: currentColor;
+    border: 3px solid currentColor;
+  }
+}

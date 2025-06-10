@@ -1,7 +1,13 @@
 @use "../abstracts/" as *;
-
+/*! purgecss start ignore */
+:where(html) {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
 :where(body) {
   font-family: var(--ff-primary);
   font-size: var(--fs-base);
   font-weight: var(--fw-400);
 }
+
+/*! purgecss emd ignore */

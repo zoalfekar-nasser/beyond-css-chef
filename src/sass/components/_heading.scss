@@ -1,0 +1,41 @@
+@use "../abstracts/" as *;
+
+.main-heading {
+  font-family: $ff-secondary;
+  color: var(--clr-neutral-100);
+  font-weight: $fw-400;
+  font-size: fs(xxxl);
+  text-wrap: balance;
+}
+
+.sub-heading {
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+  color: var(--h3-color, var(--clr-primary-900));
+  font-size: fs(base);
+
+}
+
+.heading {
+  --ht-color: var(--clr-primary-500);
+  --he-color: var(--clr-neutral-500);
+
+  &__title {
+    color: var(--ht-color);
+    font-family: $ff-secondary;
+    font-weight: $fw-400;
+    font-size: fs(xxl);
+    margin-bottom: 0.25em;
+    text-wrap: balance;
+    line-height: 1;
+  }
+
+  &__extension {
+    color: var(--he-color);
+    font-size: fs(m);
+    text-transform: uppercase;
+    max-width: 50ch;
+  }
+}
+
+
