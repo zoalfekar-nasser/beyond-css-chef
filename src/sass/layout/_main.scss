@@ -2,7 +2,7 @@
 @use "sass:color";
 
 .hero {
-  min-height: 100dvh;
+  min-height: 100svh;
   background-image: url("/assets/hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -16,7 +16,7 @@
   }
 
   @include media-min(medium) {
-    min-height: 85dvh;
+    min-height: 85svh;
   }
 }
 
