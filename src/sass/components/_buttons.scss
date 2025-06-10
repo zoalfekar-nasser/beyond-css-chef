@@ -20,7 +20,6 @@
 
     @include media-min(medium) {
       &:is(:hover, :focus-visible) {
-        color: var(--clr-neutral-100);
         background-color: hsl(from var(--btn-bg) h s calc(l - 25));
       }
     }
