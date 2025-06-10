@@ -11,13 +11,13 @@
 .sub-heading {
   text-transform: uppercase;
   margin-bottom: 0.25em;
-  color: var(--h3-color, var(--clr-primary-900));
+  color: var(--h3-color, var(--clr-neutral-900));
   font-size: fs(base);
 
 }
 
 .heading {
-  --ht-color: var(--clr-primary-500);
+  --ht-color: var(--clr-primary-400);
   --he-color: var(--clr-neutral-500);
 
   &__title {
