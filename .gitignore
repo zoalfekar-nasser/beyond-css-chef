@@ -25,7 +25,6 @@ dist-ssr
 *.sln
 *.sw?
 
-vite.config.js
 styleguide.md
 .stylelint*
 config/
