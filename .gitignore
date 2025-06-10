@@ -27,4 +27,5 @@ dist-ssr
 
 vite.config.js
 styleguide.md
-.stylelit*
+.stylelint*
+config/
