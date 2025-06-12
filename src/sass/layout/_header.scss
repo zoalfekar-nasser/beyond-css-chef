@@ -21,7 +21,7 @@
   }
 
   &__link {
-    font-family: $ff-secondary;
+    font-family: var(--ff-secondary);
     color: var(--clr-neutral-100);
     text-decoration: none;
     transition: letter-spacing 0.3s;

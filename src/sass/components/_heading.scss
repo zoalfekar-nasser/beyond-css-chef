@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .main-heading {
-  font-family: $ff-secondary;
+  font-family: var(--ff-secondary);
   color: var(--clr-neutral-100);
   font-weight: $fw-400;
   font-size: fs(xxxl);
@@ -20,7 +20,7 @@
 
   &__title {
     color: var(--ht-color);
-    font-family: $ff-secondary;
+    font-family: var(--ff-secondary);
     font-weight: $fw-400;
     font-size: fs(xxl);
     margin-block-end: 0.25em;
