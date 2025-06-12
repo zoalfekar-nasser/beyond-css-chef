@@ -4,6 +4,7 @@
 .hero {
   min-height: 100vh; // Fallback
   min-height: 100svh;
+  background-color: var(--clr-neutral-900); // Fallback
   background-image: url("/assets/hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -46,8 +47,8 @@
 }
 
 .meals {
-  // --min-col-size: 275px;
-
+  --min-col-size: 275px;
+  background-color: var(--clr-neutral-900); // Fallback
   background-image: url(/assets/meals-bg.png);
   background-size: cover;
   color: var(--clr-neutral-100);
