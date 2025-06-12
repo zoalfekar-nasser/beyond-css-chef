@@ -26,6 +26,7 @@
   </head>
   <body>
     <header class="header">
+      <a href="#main-content" class="skip-link">Skip to Main Content</a>
       <div class="wrapper">
         <div class="header__content">
           <img
@@ -50,7 +51,12 @@
     <main>
       <section class="hero | text-center">
         <div class="wrapper">
-          <div class="hero__content | flow" data-spacing="medium">
+          <div
+            id="main-content"
+            tabindex="-1"
+            class="hero__content | flow"
+            data-spacing="medium"
+          >
             <h1 class="main-heading | text-balance">
               Homecooked meals delivered straight to your door
             </h1>
@@ -215,7 +221,7 @@
       <section id="testimonials" class="testimonials | section-padding">
         <div class="wrapper | flow" data-type="extended" data-spacing="large">
           <div class="heading">
-            <h2 class="heading__title | text-center ">
+            <h2 class="heading__title | text-center">
               What our clients are saying about us
             </h2>
           </div>
