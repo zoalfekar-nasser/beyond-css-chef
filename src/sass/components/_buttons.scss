@@ -3,7 +3,7 @@
   text-transform: uppercase;
   color: var(--btn-fg);
   background-color: var(--btn-bg);
-  padding: $space-xs $space-base;
+  padding: space(xs) space(base);
   font-size: 1rem;
   font-weight: $fw-700;
   cursor: pointer;

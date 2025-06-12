@@ -1,9 +1,10 @@
 @use "spacing" as *;
+@use "functions" as *;
 
 // @use ""
 %flex {
   display: flex;
-  gap: var(--gap, $space-base);
+  gap: var(--gap, space(base));
 }
 
 %shadow {

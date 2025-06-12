@@ -1,7 +1,9 @@
 @use "../abstracts/" as *;
 .footer {
   background-color: var(--clr-primary-400);
-  color: var(--clr-neutral-100);
-  font-size: fs(s);
-  line-height: 1.5;
+  &__text {
+    color: var(--clr-neutral-100);
+    font-size: fs(s);
+    line-height: 1.5;
+  }
 }

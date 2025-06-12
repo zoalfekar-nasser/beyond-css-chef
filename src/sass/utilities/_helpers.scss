@@ -24,16 +24,16 @@
 
 .flow {
   &[data-spacing="small"] {
-    --flow-spacer: #{$space-s};
+    --flow-spacer: #{space(s)};
   }
   &[data-spacing="medium"] {
-    --flow-spacer: #{$space-m};
+    --flow-spacer: #{space(m)};
   }
   &[data-spacing="large"] {
-    --flow-spacer: #{$space-l};
+    --flow-spacer: #{space(l)};
   }
 
   > * + * {
-    margin-top: var(--flow-spacer, $space-base);
+    margin-top: var(--flow-spacer, space(base));
   }
 }
