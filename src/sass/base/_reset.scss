@@ -14,9 +14,10 @@
 
 :where(button) {
   border: none;
+  cursor: pointer;
 }
 
-:where(img) {
+:where(img,picture) {
   display: block;
   max-width: 100%;
 }

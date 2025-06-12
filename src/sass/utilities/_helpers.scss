@@ -34,6 +34,6 @@
   }
 
   > * + * {
-    margin-top: var(--flow-spacer, space(base));
+    margin-block-start: var(--flow-spacer, space(base));
   }
 }

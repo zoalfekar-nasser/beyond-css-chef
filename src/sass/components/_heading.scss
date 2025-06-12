@@ -9,10 +9,9 @@
 
 .sub-heading {
   text-transform: uppercase;
-  margin-bottom: 0.25em;
+  margin-block-end: 0.25em;
   color: var(--h3-color, var(--clr-neutral-900));
   font-size: fs(base);
-
 }
 
 .heading {
@@ -24,7 +23,7 @@
     font-family: $ff-secondary;
     font-weight: $fw-400;
     font-size: fs(xxl);
-    margin-bottom: 0.25em;
+    margin-block-end: 0.25em;
     text-wrap: balance;
     line-height: 1;
   }
@@ -36,5 +35,3 @@
     max-width: 50ch;
   }
 }
-
-
