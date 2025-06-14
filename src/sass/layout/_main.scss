@@ -99,7 +99,7 @@
     background-color: hsl(from var(--clr-neutral-900) h s l / 0.5);
     backdrop-filter: blur(3px);
   }
-  @include media-min(medium) {
+  @include media-min(large) {
     &__description {
       opacity: 0;
       visibility: hidden; // Prevents interaction when invisible
