@@ -89,6 +89,9 @@
 
   &__photo {
     grid-row: span 2;
+    img {
+      width: 100%;
+    }
   }
 
   &__description {
@@ -113,7 +116,7 @@
 }
 
 .testimonials {
-  --min-col-size: 300px;
+  --min-col-size: 275px;
   background-color: var(--clr-neutral-100);
 
   &__content {
